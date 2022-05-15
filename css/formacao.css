@@ -13,7 +13,7 @@
   content: '';
   position: absolute;
   bottom: -9rem;
-  left: 1.5rem;
+  left: 2rem;
   transform: rotate(-45deg);
   width: 14rem;
   height: 4rem;
@@ -121,7 +121,6 @@
 
   #formacao > div::after {
     transform: rotate(0);
-    left: 2rem;
     bottom: -10rem;
   }
 
