@@ -4,8 +4,20 @@
 }
 
 #formacao > div {
+  position: relative;
   grid-template-columns: 37rem 1fr;
   gap: 11rem;
+}
+
+#formacao > div::after {
+  content: '';
+  position: absolute;
+  bottom: -9rem;
+  left: 1.5rem;
+  transform: rotate(-45deg);
+  width: 14rem;
+  height: 4rem;
+  background: url('../img/ornamento.svg');
 }
 
 #formacao .subtitulo {
@@ -105,6 +117,12 @@
   #formacao > div {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  #formacao > div::after {
+    transform: rotate(0);
+    left: 2rem;
+    bottom: -10rem;
   }
 
   #formacao .subtitulo {
