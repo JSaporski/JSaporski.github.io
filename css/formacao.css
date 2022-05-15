@@ -1,0 +1,131 @@
+#formacao {
+  padding: 8rem 0;
+  background-color: var(--c12);
+}
+
+#formacao > div {
+  grid-template-columns: 37rem 1fr;
+  gap: 11rem;
+}
+
+#formacao .subtitulo {
+  color: var(--b);
+}
+
+#formacao .formacao-infos p {
+  max-width: 45ch;
+  margin-bottom: 6rem;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--c4);
+}
+
+#formacao .formacao-infos p strong {
+  color: var(--w);
+}
+
+#formacao .formacao-infos .formacao-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+#formacao .formacao-lista .formacao-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--b);
+  background-color: var(--c13);
+}
+
+#formacao .formacao-lista .formacao-item span {
+  color: var(--c4);
+}
+
+#formacao .formacao-lista .formacao-item span:nth-child(1) {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+#formacao .formacao-lista .formacao-item h3::before {
+  left: -0.5rem;
+}
+
+#formacao .formacao-lista .formacao-item h3 {
+  flex: 1;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--w);
+}
+
+#formacao .formacao-lista .formacao-item span:nth-child(2) {
+  font-size: 1.8rem;
+}
+
+#formacao .formacao-idiomas h4::before {
+  content: '';
+  position: absolute;
+  left: -5rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: url('../img/icone-idiomas.svg');
+}
+
+#formacao .formacao-idiomas h4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--c4);
+}
+
+#formacao .formacao-idiomas strong {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--w);
+}
+
+#formacao .formacao-idiomas strong + strong {
+  margin-top: 1.5rem;
+}
+
+#formacao .formacao-idiomas strong span {
+  font-weight: normal;
+  color: var(--c4);
+}
+
+@media only screen and (max-width: 830px) {
+  #formacao > div {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #formacao .subtitulo {
+    font-size: 7.2rem;
+    line-height: 7.92rem;
+    color: var(--w);
+  }
+
+  #formacao .formacao-idiomas h4::before {
+    left: 7rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #formacao .subtitulo {
+    font-size: 4rem;
+    line-height: 4.4rem;
+  }
+
+  #formacao .formacao-infos p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}

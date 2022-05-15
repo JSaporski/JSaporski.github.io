@@ -1,0 +1,120 @@
+#experiencia {
+  padding-bottom: 6rem;
+}
+
+#experiencia .subtitulo {
+  color: var(--c2-2);
+}
+
+#experiencia .experiencia-infos > p {
+  max-width: 45ch;
+  margin-bottom: 6rem;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--c10);
+}
+
+#experiencia .experiencia-infos > p strong {
+  color: var(--c12);
+}
+
+#experiencia .experiencia-lista .experiencia-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--c2-2);
+  background-color: var(--c2);
+}
+
+#experiencia .experiencia-lista .experiencia-item + .experiencia-item {
+  margin-top: 4rem;
+}
+
+#experiencia .experiencia-lista .experiencia-item h3,
+.tecnologias-item span {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+#experiencia .experiencia-lista .sobre-item .experiencia-ano {
+  position: absolute;
+  left: -12.5rem;
+  top: 2.15rem;
+  width: 8rem;
+  font-size: 1.4rem;
+  text-align: right;
+  color: var(--c10);
+}
+
+#experiencia .experiencia-lista .sobre-item h3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#experiencia .experiencia-item .sobre-item p {
+  max-width: 50ch;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: var(--c10);
+}
+
+#experiencia .tecnologias-item span {
+  font-weight: 700;
+}
+
+#experiencia .tecnologias-item .tecnologias-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+#experiencia .tecnologias-item .tecnologias-cards li {
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  background-color: var(--w);
+}
+
+@media only screen and (max-width: 830px) {
+  #experiencia {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #experiencia .subtitulo {
+    font-size: 7.2rem;
+    line-height: 7.92rem;
+    color: var(--c12);
+  }
+
+  #experiencia .experiencia-lista .sobre-item .experiencia-ano {
+    top: -1.5rem;
+    left: 2rem;
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    color: var(--w);
+    border-radius: 0.5rem;
+    background-color: var(--c10);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #experiencia .experiencia-lista .experiencia-item {
+    grid-template-columns: 1fr;
+  }
+
+  #experiencia .subtitulo {
+    font-size: 4rem;
+    line-height: 4.4rem;
+  }
+
+  #experiencia .experiencia-infos > p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}

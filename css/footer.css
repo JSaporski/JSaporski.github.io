@@ -1,0 +1,97 @@
+#footer {
+  padding: 10rem 0 6rem;
+  background-color: var(--b);
+}
+
+#footer div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 12rem;
+  column-gap: 6rem;
+}
+
+#footer p:not(.copy) {
+  align-self: center;
+  max-width: 40ch;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--c4);
+}
+
+#footer .footer-contato {
+  align-self: center;
+  justify-self: end;
+}
+
+#footer .footer-contato li {
+  text-align: right;
+}
+
+#footer .footer-contato li + li {
+  margin-top: 3rem;
+}
+
+#footer .footer-contato li a {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--w);
+}
+
+#footer .footer-contato li a:hover {
+  color: var(--c7);
+}
+
+#footer .copy {
+  grid-column: 1 / -1;
+  font-size: 1.8rem;
+  color: var(--c7);
+}
+
+@media only screen and (max-width: 1024px) {
+  #footer div {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+
+  #footer .footer-contato,
+  #footer p:not(.copy) {
+    justify-self: center;
+  }
+
+  #footer p:not(.copy),
+  #footer .footer-contato li {
+    text-align: center;
+  }
+
+  #footer .copy {
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #footer {
+    padding-top: 8rem;
+  }
+
+  #footer div {
+    gap: 6rem;
+  }
+
+  #footer p:not(.copy) {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  #footer .footer-contato li a {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+  }
+
+  #footer .footer-contato li + li {
+    margin-top: 1rem;
+  }
+
+  #footer .copy {
+    justify-self: center;
+  }
+}

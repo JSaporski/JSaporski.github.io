@@ -1,0 +1,82 @@
+:root {
+  font-size: 62.5%;
+  --w: hsl(0, 0%, 100%);
+  --c2: hsl(0, 0%, 94%);
+  --c2-2: hsl(0, 0%, 86%);
+  --c4: hsl(0, 0%, 70%);
+  --c7: hsl(0, 0%, 46%);
+  --c10: hsl(0, 0%, 22%);
+  --c12: hsl(0, 0%, 8%);
+  --c13: hsl(0, 0%, 4%);
+  --b: hsl(0, 0%, 0%);
+  --a1: hsl(216, 51%, 54%);
+  --a2: hsl(240, 54%, 39%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+h3::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  width: 0.4rem;
+  height: 2rem;
+  background: linear-gradient(180deg, #4e7ec6 0%, #2e2e99 100%);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 14rem;
+}
+
+.subtitulo {
+  font-size: 14.4rem;
+  line-height: 14.4rem;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
+@media only screen and (max-width: 630px) {
+  .container {
+    max-width: 42.5rem;
+  }
+}

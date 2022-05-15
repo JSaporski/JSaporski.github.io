@@ -1,0 +1,46 @@
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+#header .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#header .menu li a {
+  font-size: 1.8rem;
+  color: var(--c12);
+  transition: 0.3s ease-out;
+}
+
+#header .menu li a:hover {
+  color: var(--c7);
+}
+
+@media only screen and (max-width: 770px) {
+  #header {
+    flex-direction: column;
+  }
+
+  #header .menu {
+    margin-top: 3rem;
+    gap: 1.5rem;
+  }
+
+  #header .menu li a {
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.5rem;
+    background-color: var(--c2);
+  }
+
+  #header .menu li a:hover {
+    color: var(--c2);
+    background-color: var(--c10);
+  }
+}

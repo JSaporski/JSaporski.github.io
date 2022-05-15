@@ -1,0 +1,86 @@
+#intro {
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+}
+
+#intro .intro-infos h1::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 1.5rem;
+  left: -4rem;
+  transform: rotate(-45deg);
+  width: 14rem;
+  height: 4rem;
+  background: url('../img/ornamento.svg');
+}
+
+#intro .intro-infos h1 {
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 7.2rem;
+  line-height: 8rem;
+  color: var(--c12);
+}
+
+#intro .intro-infos .paragrafo-quebra {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#intro .intro-infos .paragrafo-quebra p {
+  font-size: 2.4rem;
+  color: var(--c10);
+}
+
+@media only screen and (max-width: 1024px) {
+  #intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  #intro .intro-infos h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+
+  #intro .intro-infos h1::before {
+    top: 0.5rem;
+    left: -5rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #intro {
+    grid-template-columns: 1fr;
+    padding-bottom: 10rem;
+  }
+
+  #intro .foto {
+    display: none;
+  }
+
+  #intro .intro-infos h1::before {
+    position: initial;
+    display: block;
+    transform: rotate(0);
+    width: 6rem;
+    height: 0.6rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #4e7ec6 0%, #2e2e99 100%);
+  }
+
+  #intro .intro-infos h1 {
+    margin-bottom: 2rem;
+    font-size: 3.4rem;
+    line-height: 3.74rem;
+  }
+
+  #intro .intro-infos .paragrafo-quebra p {
+    font-size: 1.8rem;
+  }
+}
